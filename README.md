@@ -92,3 +92,26 @@ class railwayreservation():
                     self.noofseats[3] += 1
                     self.noofseats[4] -= 1
         self.see()
+        
+ r = railwayreservation()
+flag = True
+while flag:
+    print(f'welcomce to railway reservation\n select:\n 1.booking \n 2.cancelation \n 3.view reserved \n 4. view availables \n 5.exit')
+    a = int(input('enter your selection:'))
+    if a == 1:
+        b = input('enter ur name:')
+        c = input("enter ur preferance['u_birth', 'l_birth', 'm_birth', 'rac', 'wlist']:")
+        r.book(b,c)
+    elif a == 2:
+        d = input('enter ur id:')
+        r.cancel(d)
+        print('deletion successful')
+    elif a == 3:
+        r.see()
+    elif a == 4:
+        r.remaining()
+    elif a == 5:
+        flag = False
+        break
+    print('_________________________________________________________________')
+
