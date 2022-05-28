@@ -93,7 +93,7 @@ class railwayreservation():
                     self.noofseats[4] -= 1
         self.see()
         
- r = railwayreservation()
+r = railwayreservation()
 flag = True
 while flag:
     print(f'welcomce to railway reservation\n select:\n 1.booking \n 2.cancelation \n 3.view reserved \n 4. view availables \n 5.exit')
